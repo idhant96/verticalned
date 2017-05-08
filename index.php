@@ -1,9 +1,8 @@
 
 <?php
  session_start();
-  require_once '\drive-api\vendor\autoload.php';
   //require $_SERVER['DOCUMENT_ROOT'].'/projects/verticalned/DB/init.php';
-  require_once 'DB/init.php'; 
+  require_once 'DB/init.php';
   require_once 'templates/header.php';
   $subAction = isset($_GET['page']) ? $_GET['page'] : 'index';
 
@@ -14,7 +13,7 @@
       case 'announce':
        require 'Files/'.$subAction.'.php';
         break;
-      case 'profile':
+      case 'front_page':
          if(is_logged_in())
         {
           require 'Files/'.$subAction.'.php';
@@ -36,14 +35,10 @@
         case 'logout':
           require 'Files/logout.php';
           break;
-          
+
           break;
       case 'index':
       default:
          require 'Files/login.php';
         break;
     }
-    
-  
-
-

@@ -1,29 +1,18 @@
-
-  <div class = row>
-
-    <form class="col s4 offset-s8" method="post" action="index.php?page=login">
+<div class="row">
+  <div class="col s12 l8">
+  </div>
+  <div class="col s12 l4">
+<div class="container">
+    <form method="post" action="index.php?page=login">
       <h2>Staff Login </h2>
-      <span class="flow-text">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="regno" type="text" class="validate" name="username">
-          <label for="regno">Register No: </label>
+ <div class="form-group">
+   <label for="regno">Registerno:</label><br>
+     <input id="regno" type="text" class="validate" name="username" style="width:75%"><br>
+         <label for="password">Password</label><br>
+          <input id="password" type="password" class="validate" name="password"style="width:75%"><br>
         </div>
-        </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="password" type="password" class="validate" name="password">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <input type="submit" name="submit" value="login">
-    </span>
+      <input type="submit" class="btn btn-primary" name="submit" value="login">
     </form>
 </div>
-
-
-
-
-
-
-
+</div>
+</div>

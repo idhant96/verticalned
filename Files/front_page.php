@@ -1,5 +1,5 @@
 <?php
-	
+
 if(!empty($_POST) && isset($_POST['submit'])){
 	echo 'hello';
 	$subject = escape($_POST['subject']);
@@ -21,14 +21,14 @@ if(!empty($_POST) && isset($_POST['submit'])){
 }
 
 
-    $stmt  = $dbh->prepare("SELECT announcements,link,year,date_a,staff FROM announcements");
+    $stmt  = $dbh->prepare("SELECT * FROM announcements");
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-	require 'templates/header.php';	
+	require 'templates/header.php';
 	require 'templates/components/navbar.php';
-	require 'templates/components/notifications.php';
+	require 'templates/components/profile_card.php';
+	require 'templates/components/posts.php';
 	require 'templates/footer.php';
 
 ?>
-

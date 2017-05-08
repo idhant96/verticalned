@@ -6,16 +6,16 @@ if(!empty($_POST) && isset($_POST['submit'])){
 
 
         if(login($user, $pass)){
-          header("location:index.php?page=profile");
+          header("location:index.php?page=front_page");
         }
-      
+
     else{
       header('location:index.php?page=login');
       }
     }
 
 require 'templates/header.php';
-//require 'templates/components/navbar.php';
+require 'templates/components/navbar.php';
 require 'templates/components/loginform.php';
 require 'templates/footer.php';
 ?>
