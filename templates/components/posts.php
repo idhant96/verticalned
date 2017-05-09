@@ -1,6 +1,6 @@
 <div class="col s12 m3 l6">
 
-    <h2 class="header">announcements</h2>
+    <h2 class="header">Announcements</h2>
     <?php foreach ($result as $card) { ?>
   <div class="card horizontal">
     <div class="card-image">
