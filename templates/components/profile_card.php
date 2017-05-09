@@ -1,6 +1,6 @@
 <div class="section">
 <div class="row">
-     <div class="col s12 m3 l3">
+   <div class="col s12 m3 l3">
        <div class="card #fffde7 yellow lighten-5">
          <div class="card-content white-text center-align">
            <span class="card-title"><?php echo $_SESSION['username']; ?> </span><br>
