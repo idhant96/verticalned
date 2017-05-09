@@ -1,25 +1,53 @@
 <?php
-
 if(!empty($_POST) && isset($_POST['submit'])){
-	echo 'hello';
+		$date = new DateTime();
+	$x = $date->format('U = Y-m-d H:i:s');
 	$subject = escape($_POST['subject']);
 	$links = escape($_POST['links']);
-	$first = escape($_POST['first']);
-	$second = escape($_POST['second']);
-	$third = escape($_POST['third']);
-	$fourth = escape($_POST['fourth']);
+	if ( isset($_POST['first']){
+		$first = 1;
+	}
+	else {
+		$first = 0;
+	}
+	if ( isset($_POST['second']){
+		$second = 1;
+	}
+	else {
+		$second = 0;
+	}
+	if ( isset($_POST['third']){
+		$third = 1;
+	}
+	else {
+		$third = 0;
+	}
+	if ( isset($_POST['fourth']){
+		$fourth = 1;
+	}
+	else {
+		$fourth = 0;
+	}
 	$description = escape($_POST['description']);
-	$sql = "INSERT INTO announcements (announcements,link,year,date_a,staff)
-			VALUES (:announce,:nlink,:nyear,:ndate,:nstaff)";
-	$sql = $dbh->execute(array(
-		":announce" => $description,
-		":nlink" => $links,
-		":nyear" => $first,
-		":ndate" => date('h-i-s'),
-		":nstaff" => $_SESSION['username']
-		));
+try{
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = $dbh->prepare("INSERT INTO announcements (description,links,first,second,third,fourth,time,staff,subject)
+			VALUES (?,?,?,?,?,?,?,?,?)");
+$sql->bindParam(1,$description);
+$sql->bindParam(2,$links);
+$sql->bindParam(3,$first);
+		$sql->bindParam(4,$second);
+			$sql->bindParam(5,$third);
+				$sql->bindParam(6,$fourth);
+		$sql->bindParam(7,$x);
+			$sql->bindParam(8,$_SESSION['username']);
+			$sql->bindParam(9,$subject);
+$sql->execute();
 }
-
+catch(PDOException $e){
+	echo $e->getMessage();
+}
+}
 
     $stmt  = $dbh->prepare("SELECT * FROM announcements");
     $stmt->execute();
@@ -29,6 +57,7 @@ if(!empty($_POST) && isset($_POST['submit'])){
 	require 'templates/components/navbar.php';
 	require 'templates/components/profile_card.php';
 	require 'templates/components/posts.php';
+	require 'templates/components/events.php';
 	require 'templates/footer.php';
 
 ?>
