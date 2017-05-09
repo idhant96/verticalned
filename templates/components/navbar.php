@@ -5,8 +5,8 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Contact Us</a></li>
       <?php } else { ?>
-      <li><a href='#'>Notes</a></li>
-      <li><a href='#'>Profile</a></li>
+      <li><a href='index.php?page=notes'>Notes</a></li>
+      <li><a href='index.php?page=front_page  '>Profile</a></li>
         <li><a href='index.php?page=logout'>Logout!</a></li>
   <?php  } ?>
     </ul>
