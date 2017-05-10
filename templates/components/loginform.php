@@ -1,8 +1,16 @@
+
 <div class="row">
   <div class="col s12 l8">
   </div>
   <div class="col s12 l4">
-<div class="container">
+      <div class="#eceff1 blue-grey lighten-5">
+<div class="container" style=" width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;">
+
     <form method="post" action="index.php?page=login">
       <h2>Staff Login </h2>
  <div class="form-group">
@@ -13,6 +21,7 @@
         </div>
       <input type="submit" class="btn btn-primary" name="submit" value="login">
     </form>
+</div>
 </div>
 </div>
 </div>
