@@ -14,4 +14,4 @@
         <link rel="shortcut icon" href="assets/ico/favicon.ico"/>
 
 
-    <body class="#616161 grey darken-2">
+    <body class="#e1f5fe light-blue lighten-5">
