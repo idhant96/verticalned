@@ -37,7 +37,7 @@
                <input type="checkbox" id="fourth" name="fourth" />
                  <label for="fourth">Fourth Year</label>
           </div>
-
+<br><br>
             <div class="input-field">
               <textarea id="description" class="materialize-textarea" name="description" required></textarea>
               <label for="description">Description</label>
@@ -51,4 +51,28 @@
       </div>
 
     </div>
+
+    <br /><br />
+  <!--    <a class="waves-effect waves-light btn" onClick="expandAll();">Expand All</a>-->
+
+    <br /><br />
+    <h3>Tasks for week</h3>
+            <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i><a name="987"/>First</a></div>
+                  <div class="collapsible-body"><p>First Things First</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Second</div>
+                  <div class="collapsible-body"><p>Give me a second ...</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Third</div>
+                  <div class="collapsible-body"><p>I don't like being a third wheel</div>
+                </li>
+            </ul>
+                  <a class="waves-effect waves-light btn" onClick="collapseAll();">Collapse All</a>
+
+        </div>
+
 </div>
