@@ -1,7 +1,7 @@
 
 <?php
  session_start();
-  require_once '\drive-api\vendor\autoload.php';
+  //require_once '\drive-api\vendor\autoload.php';
   //require $_SERVER['DOCUMENT_ROOT'].'/projects/verticalned/DB/init.php';
   require_once 'DB/init.php'; 
   require_once 'templates/header.php';
