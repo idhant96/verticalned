@@ -2,6 +2,7 @@
 <?php
  session_start();
   //require $_SERVER['DOCUMENT_ROOT'].'/projects/verticalned/DB/init.php';
+  require_once 'vendor/autoload.php';
   require_once 'DB/init.php';
   require_once 'templates/header.php';
   $subAction = isset($_GET['page']) ? $_GET['page'] : 'index';
