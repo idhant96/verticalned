@@ -1,5 +1,5 @@
 <nav class="light-blue lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Verticalned</a>
+  <div class="nav-wrapper container"><a id="logo-container" href="index.php?page=front_page" class="brand-logo">Verticalned</a>
     <ul class="right hide-on-med-and-down">
         <?php if(is_logged_in()==false){ ?>
       <li><a href="#">About</a></li>

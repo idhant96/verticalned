@@ -1,70 +1,52 @@
-<title>PHP Live MySQL Database Search</title>
-<style type="text/css">
-    body{
-        font-family: Arail, sans-serif;
-    }
-    /* Formatting search box */
-    .search-box{
-        width: 300px;
-        position: relative;
-        display: inline-block;
-        font-size: 14px;
-    }
-    .search-box input[type="text"]{
-        height: 32px;
-        padding: 5px 10px;
-        border: 1px solid #CCCCCC;
-        font-size: 14px;
-    }
-    .result{
-        position: absolute;
-        z-index: 999;
-        top: 100%;
-        left: 0;
-    }
-    .search-box input[type="text"], .result{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /* Formatting result items */
-    .result p{
-        margin: 0;
-        padding: 7px 10px;
-        border: 1px solid #CCCCCC;
-        border-top: none;
-        cursor: pointer;
-    }
-    .result p:hover{
-        background: #f2f2f2;
-    }
-</style>
-<script>
-$(document).ready(function(){
-    $('.search-box input[type="text"]').on("keyup input", function(){
-        /* Get input value on change */
-        var inputVal = $(this).val();
-        var resultDropdown = $(this).siblings(".result");
-        if(inputVal.length){
-            $.get("notes.php", {term: inputVal}).done(function(data){
-                // Display the returned data in browser
-                resultDropdown.html(data);
-            });
-        } else{
-            resultDropdown.empty();
-        }
-    });
 
-    // Set search input value on click of result item
-    $(document).on("click", ".result p", function(){
-        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
-        $(this).parent(".result").empty();
-    });
-});
-</script>
-</head>
-<body>
-    <div class="search-box">
-        <input type="text" autocomplete="off" placeholder="Search country..." />
-        <div class="result"></div>
+<ul id="tabs-swipe-demo" class="tabs">
+  <li class="tab col s3"><a href="#test-swipe-1">Upload Notes</a></li>
+  <li class="tab col s3"><a class="active" href="#test-swipe-2">Check directory</a></li>
+
+</ul>
+<div id="test-swipe-1" class="col s12 l12 m12">
+  <br><br>
+  <div class="row">
+    <div class="col s12 l3 m3">
     </div>
-</body>
+    <div class="col s12 l6 m6">
+        <div class="container #ffffff white">
+<form  action='' method='get'>
+
+
+<div class="row">
+    <div class="input-field col s6 l6 m6">
+            <input placeholder="File name" id="first_name" type="text" class="validate">
+            <label for="first_name">Enter file name </label>
+          </div>
+        </div>
+<div class="row">
+              <div class="input-field col s6 l6 m6">
+                      <input placeholder="subject" id="first_name" type="text" class="validate">
+                      <label for="first_name">Enter Subject </label>
+                    </div>
+              </div>
+
+  <div class="file-field input-field">
+     <div class="btn">
+       <span>File</span>
+       <input type="file">
+     </div>
+     <div class="file-path-wrapper">
+       <input class="file-path validate" type="text">
+     </div>
+   </div>
+        <button type = 'submit' name = 'submit' class="modal-action modal=close waves-effect  btn-flat">Add</button>
+
+</form>
+</div>
+</div>
+<div class="col s12 m3 l3">
+</div>
+</div>
+</div>
+
+
+<div id="test-swipe-2" class="col s12 l12 m12">
+
+</div>
