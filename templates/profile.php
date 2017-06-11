@@ -1,9 +1,9 @@
-<br/><br/><br/><div class="container-fluid" Style="margin-top:40px;">
+<br/><br/><br/><div class="container-fluid" Style="margin-top:40px; padding:0px;">
 <div class="row">
 <div class="col-md-3">
 
 <!--Card-->
-<div class="card card-personal" Style="width:300px;height:460px; margin-left:40px;margin-bottom:50px;">
+<div class="card card-personal" Style="width:300px;height:460px; margin-left:40px;margin-bottom:60px; ">
 
     <!--Card image-->
    <center> <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg" alt="Card image cap" Style="border-radius:50%;height:50%;width:50%;"></center>
