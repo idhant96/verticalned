@@ -9,38 +9,38 @@
 
     switch ($subAction) {
       case 'login':
-        require('Files/'.$subAction.'.php');
+        require('php_file/'.$subAction.'.php');
       break;
       case 'announce':
-       require 'Files/'.$subAction.'.php';
+       require 'php_file/'.$subAction.'.php';
         break;
       case 'profile':
          if(is_logged_in())
         {
-          require 'Files/'.$subAction.'.php';
+          require 'php_file/'.$subAction.'.php';
         }
         else{
-          require 'Files/login.php';
+          require 'php_file/login.php';
         }
         break;
       case 'notes':
         if(is_logged_in())
         {
-          require 'Files/'.$subAction.'.php';
+          require 'php_file/'.$subAction.'.php';
         }
         else
         {
-          require 'Files/login.php';
+          require 'php_file/login.php';
         }
         break;
         case 'logout':
-          require 'Files/logout.php';
+          require 'php_file/logout.php';
           break;
           
           break;
       case 'index':
       default:
-         require 'Files/login.php';
+         require 'php_file/login.php';
         break;
     }
     

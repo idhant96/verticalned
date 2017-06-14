@@ -108,36 +108,26 @@
     <script type="text/javascript" src="material/materialize/js/bootstrap.min.js"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="material/materialize/js/mdb.min.js"></script>
+   
+   <script type="text/javascript" src="material/materialize/js/mdb.min.js"></script>
+   
 	
 	<!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery-1.8.2.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/notes_script.js"></script> 
+	
 <script src="js/flexslider.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/jquery.cslider.js"></script>
 <script src="js/slider.js"></script>
 <script defer="defer" src="js/custom.js"></script>
+<!-- Include our script files -->
+	
+
 <!-- end: Java Script -->
 	</body>
-<script>
-$(document).ready(function(){
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('#modal1').modal();
-});
-function expandAll(){
-  $(".collapsible-header").addClass("active");
-  $(".collapsible").collapsible({accordion: false});
-}
 
-function collapseAll(){
-  $(".collapsible-header").removeClass(function(){
-    return "active";
-  });
-  $(".collapsible").collapsible({accordion: true});
-  $(".collapsible").collapsible({accordion: false});
-}
- </script>
   </body>
 </html>

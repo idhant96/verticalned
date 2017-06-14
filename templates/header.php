@@ -17,14 +17,13 @@
 
 	<link href="css/style.css" rel="stylesheet">
 	
-
-    <!-- Material Design Bootstrap -->
-    <link href="material/materialize/css/mdb.min.css" rel="stylesheet">
+  <link href="css/notes_style.css" rel="stylesheet">
+   
 	   <!-- JQuery -->
 	   
+
      <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
     <!-- Bootstrap core CSS -->
     <link href="material/materialize/css/bootstrap.min.css" rel="stylesheet">
 
@@ -60,6 +59,10 @@
 }
 .navbar, .navbar-inner, .nav{
 	background:#004d80 !important;
+}
+
+#text1 :focus {
+    width: 100%;
 }
 </style>
 <script>

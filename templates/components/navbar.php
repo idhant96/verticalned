@@ -1,7 +1,7 @@
 
 
 <!--Navbar-->
-<nav class="navbar navbar-toggleable-md navbar-dark" style="height:70px; width:100%;">
+<nav class="navbar navbar-toggleable-md navbar-dark" style="height:70px; width:100%; margin-top:0px;">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
