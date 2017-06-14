@@ -18,5 +18,5 @@ if(!empty($_POST) && isset($_POST['submit'])){
 require 'templates/components/navbar.php';
 require 'templates/components/loginform.php';
 require 'templates/components/services.php';
-require 'templates/footer.php';
+require 'templates/components/footer.php';
 ?>

@@ -4,7 +4,7 @@
   //require_once '\drive-api\vendor\autoload.php';
   //require $_SERVER['DOCUMENT_ROOT'].'/projects/verticalned/DB/init.php';
   require_once 'DB/init.php'; 
-  require_once 'templates/header.php';
+  require_once 'templates/components/header.php';
   $subAction = isset($_GET['page']) ? $_GET['page'] : 'index';
 
     switch ($subAction) {
