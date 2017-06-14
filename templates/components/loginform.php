@@ -42,7 +42,7 @@
 
 		
 	
-	
+<form  action="index.php?page=login.php" method="post">	
 <!--Form with header-->
 <div class="card b" style=" width: 30%;
     padding: 28px;
@@ -58,15 +58,15 @@
         </div>
 
         <!--Body-->
-        <div class="md-form">
+        <div class="form-group md-form">
             <i class="fa fa-envelope prefix"></i>
             <input type="text" id="form2" Style="background-color:white; border-radius:10px;"class="form-control">
             <label Style="margin-left:55px"for="form2">Faculty Id</label>
         </div>
 
-        <div class="md-form">
+        <div class="form-group md-form">
             <i class="fa fa-lock prefix"></i>
-            <input type="password" id="form4" Style="background-color:white; border-radius:10px;"class="form-control" class="form-control">
+            <input type="password" id="form4" Style="background-color:white; border-radius:10px;"class="form-control">
             <label Style="margin-left:55px" for="form4">Your password</label>
         </div>
 
@@ -74,7 +74,7 @@
             <button class="btn btn-deep-purple">Login</button>
         </div>
 
-		<div class="options inline row" Style="background-color:#b30000; border-radius:10px; ">
+		<div class="form-group options inline row" Style="background-color:#b30000; border-radius:10px; ">
             <p class="col-12 col-md-7"Style="margin:0px; padding:8px; font-size:13px;">Not a member? <a href="#">Sign Up</a></p>
             <p class="col-12 col-md-5 " Style="margin:0px; padding:8px; font-size:13px;">Forgot <a href="#">Password?</a></p>
         </div>
@@ -82,3 +82,4 @@
 
     
 </div>
+</form>
