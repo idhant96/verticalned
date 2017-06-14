@@ -19,7 +19,9 @@
                 <li class="nav-item">
                     <a class="nav-link">Contact</a>
                 </li>
-              
+              <li class="nav-item">
+                    <a class="nav-link" href="logout.php">log out</a>
+                </li>
             </ul>
            
         </div>

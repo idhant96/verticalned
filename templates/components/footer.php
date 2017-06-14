@@ -99,30 +99,30 @@
 
   <!-- JQuery -->
 	   
-    <script type="text/javascript" src="material/materialize/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../material/materialize/js/jquery-2.2.3.min.js"></script>
 
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="material/materialize/js/tether.min.js"></script>
+    <script type="text/javascript" src="../material/materialize/js/tether.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="material/materialize/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../material/materialize/js/bootstrap.min.js"></script>
 
     <!-- MDB core JavaScript -->
    
-   <script type="text/javascript" src="material/materialize/js/mdb.min.js"></script>
+   <script type="text/javascript" src="../material/materialize/js/mdb.min.js"></script>
    
 	
 	<!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-1.8.2.js"></script>
+<script src="../js/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="js/notes_script.js"></script> 
+	<script src="../js/notes_script.js"></script> 
 	
-<script src="js/flexslider.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/jquery.cslider.js"></script>
-<script src="js/slider.js"></script>
-<script defer="defer" src="js/custom.js"></script>
+<script src="../js/flexslider.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/jquery.cslider.js"></script>
+<script src="../js/slider.js"></script>
+<script defer="defer" src="../js/custom.js"></script>
 <!-- Include our script files -->
 	
 

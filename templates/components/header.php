@@ -15,9 +15,9 @@
 	<!-- end: Mobile Specific -->
 	
 
-	<link href="css/style.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 	
-  <link href="css/notes_style.css" rel="stylesheet">
+  <link href="../css/notes_style.css" rel="stylesheet">
    
 	   <!-- JQuery -->
 	   
@@ -25,12 +25,12 @@
      <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="material/materialize/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../material/materialize/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
-    <link href="material/materialize/css/mdb.min.css" rel="stylesheet">
+    <link href="../material/materialize/css/mdb.min.css" rel="stylesheet">
 
-	 <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	 <link href="../css/bootstrap-responsive.css" rel="stylesheet">
 	
 	<!-- end: CSS -->
 

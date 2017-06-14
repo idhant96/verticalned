@@ -25,10 +25,10 @@ if(!empty($_POST) && isset($_POST['submit'])){
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-	require 'templates/components/header.php';	
-	require 'templates/components/navbar.php';
-	require 'templates/components/notifications.php';
-	require 'templates/components/footer.php';
+	require '../templates/components/header.php';	
+	require '../templates/components/navbar.php';
+	require '../templates/components/notifications.php';
+	require '../templates/components/footer.php';
 
 ?>
 
