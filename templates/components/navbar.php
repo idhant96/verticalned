@@ -10,20 +10,22 @@
             <strong>VerticalNed</strong>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1" >
-      
-            <ul class="navbar-nav" Style="margin-left:600px;">
-               
+
+            <ul class="navbar-nav navbar-right" Style="margin-left:600px;">
+
                 <li class="nav-item">
                     <a class="nav-link">Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Contact</a>
                 </li>
+                <?php if(is_logged_in()){ ?>
               <li class="nav-item">
                     <a class="nav-link" href="logout.php">log out</a>
                 </li>
+                <?php } ?>
             </ul>
-           
+
         </div>
     </div>
 </nav>
