@@ -6,7 +6,7 @@
 
 
 $subAction = isset($_GET['page']) ? $_GET['page'] : 'index';
-echo $subAction;
+
 switch ($subAction) {
   case 'login':
     require('login.php');
@@ -14,7 +14,7 @@ switch ($subAction) {
   case 'announcement':
    require ''.$subAction.'.php';
     break;
-  case 'front_page':
+  case 'student':
      if(is_logged_in())
     {
       require ''.$subAction.'.php';

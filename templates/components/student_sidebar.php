@@ -2,9 +2,6 @@
 <!--Card-->
     <div class="author-box z-depth-1" style="height:500px; width:250px;background-color:white;margin-bottom:50px;">
 
-        <div class="search" Style="background-color:black">
-			<input type="search" placeholder="Find a file.." />
-		</div>
 
 <br/>
 		

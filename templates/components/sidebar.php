@@ -50,7 +50,7 @@
 
                 <div class="md-form form-sm">
                     <i class="fa fa-pencil prefix"></i>
-                    <textarea type="text" id="form8" class="md-textarea mb-0"></textarea>
+                    <textarea type="text" id="form8" class="md-textarea mb-0" maxlength="40" ></textarea>
                     <label for="form8">News feed</label>
                 </div>
 
@@ -97,8 +97,8 @@
 						<div class="latest-blog-posts" style="background-color:white;padding:15px;">
 
 				<h3><i class="fa fa-rss" style="margin-right:15px;"></i>News feed</h3>
-
-				<ul>
+ 
+				<ul style="height:auto;padding:1px;" >
 					<li ><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px;"></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Pellentesque quis eros dignis. </a></li>
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
