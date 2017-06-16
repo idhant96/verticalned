@@ -51,7 +51,7 @@
             <div class="modal-body">
                 
 				
-        <form method="post" action="index.php?page=front_page">
+        <form method="post" action="index.php?page=announcement.php">
           <div class="container">
 
             <div class="input-field">
@@ -90,13 +90,15 @@
               <label for="description">Description</label>
             </div><br><br>
 				</div>
+		 <button type="submit" class="btn btn-primary">Announce</button>
 				</form>
             </div>
             <!--Footer-->
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Announce</button>
+                
             </div>
+			
         </div>
         <!--/.Content-->
     </div>
