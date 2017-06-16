@@ -1,6 +1,6 @@
 
 <!--Footer-->
-<footer class="page-footer center-on-small-only " Style="background-color:#404040;width:100%; margin-top:0px;">
+<footer class="page-footer center-on-small-only mol" Style="background-color:#404040;width:100%; margin-top:0px;">
 
     <!--Footer Links-->
     <div class="container-fluid">

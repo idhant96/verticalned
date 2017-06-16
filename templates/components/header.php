@@ -39,11 +39,12 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <style>
-@media (min-width: 768px) { 
-    .carousel-caption {
-        text-align: left;
-        padding-right: 300px;
+@media only screen and (max-width: 500px) {
+    #da-slider {
+        display:block;
     }
+}
+@media only screen and (min-width: 500px){
     .b {height:385px;
         width: 900px;
         position: absolute;
@@ -52,10 +53,22 @@
         bottom: 0;
         padding: 20px 0;
         margin-left: -375px;
-		margin-top: 75px;
+		margin-top: 80px;
 		
     }
-  
+}
+
+@media only screen and (max-width: 600px){
+	.mol{width:600px;}
+}
+@media only screen and (max-width: 500px){
+	.mol{width:500px;}
+}
+@media only screen and (max-width: 700px){
+	.mol{width:700px;}
+}
+@media only screen and (max-width: 800px){
+	.mol{width:800px;}
 }
 .navbar, .navbar-inner, .nav{
 	background:#004d80 !important;

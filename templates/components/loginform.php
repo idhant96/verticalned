@@ -1,4 +1,4 @@
-<br/><br/><br/><div class="row" >
+<br/><br/><br/><div class="row mol" >
 <div class="col-md-12" >
 	<!-- start: Slider -->
 	<div class="slider-wrapper ">
@@ -6,12 +6,12 @@
 		<div id="da-slider" class="da-slider" >
 			<div class="da-slide">
 				<h2 >Grow</h2>
-				<p Style="margin-top:30px">“Wear your failure as a badge of honor.”  <br/> <br/>&nbsp &nbsp - Sunder Pichai</p>
+				<p Style="margin-top:2%">“Wear your failure as a badge of honor.”  <br/> <br/>&nbsp &nbsp - Sunder Pichai</p>
 
 			</div>
 			<div class="da-slide">
 				<h2>Evolve</h2>
-				<p Style="margin-top:30px">"I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it." <br/> <br/>&nbsp &nbsp- Bill Gates</p>
+				<p Style="margin-top:2%">"I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it." <br/> <br/>&nbsp &nbsp- Bill Gates</p>
 				<p></p>
 
 			</div>
@@ -42,10 +42,10 @@
 
 
 
-<form  action="index.php?page=login" method="post">
+<form  action="index.php?page=login" method="post" >
 <!--Form with header-->
-<div class="card b" style=" width: 30%;
-    padding: 28px;
+<div class="card b" style=" width:450px;
+    padding: 20px;
    margin-right:15px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -53,7 +53,7 @@
     <div class="card-block">
 
         <!--Header-->
-        <div class="form-header  purple darken-4">
+        <div class="form-header  purple darken-4" Style="height:80px;">
             <h3><i class="fa fa-lock"></i> Login:</h3>
         </div>
 
