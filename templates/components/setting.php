@@ -61,23 +61,124 @@ function myFunction5() {
  
 	
 	<div id="myDIV1" style="display: block;">
-    Hello world!! 1              
-    </div>
+  
+ 
+
+</div>
+
+            
+   
 	
 	<div id="myDIV2" style="display: none;">
-    Hello world!!  2             
+  
+
+ 
+  <!--Form with header-->
+
+    <div class="card-block">
+
+        <!--Header-->
+        <div class="darken-4">
+            <center><h3><i class="fa fa-user" Style="color:grey"></i> Change Username</h3></center>
+        </div>
+
+        <!--Body-->
+        <div class="md-form">
+            <i class="fa fa-user-plus prefix"></i>
+            <input type="text" id="form2" class="form-control">
+            <label for="form2">New Username</label>
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-lock prefix"></i>
+            <input type="password" id="form4" class="form-control">
+            <label for="form4">Your password</label>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-success">Change</button>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    
+
+	
     </div>
 	
 	<div id="myDIV3" style="display: none;">
-    Hello world!!  3             
+   
+
+ 
+  <!--Form with header-->
+
+    <div class="card-block">
+
+        <!--Header-->
+        <div class="darken-4">
+            <center><h3><i class="fa fa-unlock" Style="color:grey"></i> Change Password</h3></center>
+        </div>
+
+        <!--Body-->
+        <div class="md-form">
+            <i class="fa fa-key prefix"></i>
+            <input type="text" id="form2" class="form-control">
+            <label for="form2">Old Password</label>
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-lock prefix"></i>
+            <input type="password" id="form4" class="form-control">
+            <label for="form4">New password</label>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-success">Change</button>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    
+
+	
     </div>
 	
 	<div id="myDIV4" style="display: none;">
-    Hello world!!  4             
+			  
+			  <p>Do you really want to de-activate your account permanently? If yes provide us with the reason for your decision.</p>
+			  <fieldset class="form-group">
+				<input type="checkbox" id="checkbox1">
+				<label for="checkbox1">Yes de-activate my account permanently.</label>
+			</fieldset>
+			  <div class="md-form">
+				<i class="fa fa-pencil prefix"></i>
+				<textarea type="text" id="form8" class="md-textarea"></textarea>
+				<label for="form8">Reason for de-activation</label>
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-danger">Deactivate</button>
+			 </div>
+       
     </div>
 	
 	<div id="myDIV5" style="display: none;">
-    Hello world!!  5             
+  
+
+  <p>Tell us how may we can help you out in revolutionizing our education system or give us some feedback about our service.</p>
+			 
+			  <div class="md-form">
+				<i class="fa fa-pencil prefix"></i>
+				<textarea type="text" id="form8" class="md-textarea"></textarea>
+				<label for="form8">Query or feedback</label>
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-yellow">Submit</button>
+			 </div>
+       
+
+	   
     </div>
 	
 

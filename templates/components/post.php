@@ -3,7 +3,8 @@
 <section class="section extra-margins">
 
     <!--Section heading-->
-    <center><h1 class="section-heading">Announcements</h1></center>
+    <center><h1 class="section-heading" Style="margin:0px;">Announcements</h1></center>
+	<hr/>
   
   <?php foreach ($result as $card) { ?>  
 
