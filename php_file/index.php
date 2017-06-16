@@ -23,6 +23,14 @@ switch ($subAction) {
    require('index.php');
  }
     break;
+	case 'team':
+  if(is_logged_in()){
+   require ''.$subAction.'.php';
+ }else
+ {
+   require('index.php');
+ }
+    break;
   case 'student':
      if(is_logged_in())
     {

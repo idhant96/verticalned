@@ -7,7 +7,7 @@
         <a class="navbar-brand" href="#">
             <strong>VerticalNed</strong>
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav1" Style="margin-left:85%;">
+        <div class="collapse navbar-collapse" id="navbarNav1" Style="margin-left:82%;">
 
             <ul class="navbar-nav pull-xs-right" >
 
@@ -19,7 +19,7 @@
                 </li>
                 <?php if(is_logged_in()){ ?>
               <li class="nav-item">
-                    <a class="nav-link" href="logout.php">log out</a>
+                    <a class="nav-link" href="logout.php" Style="width:100px;">log out</a>
                 </li>
                 <?php } ?>
             </ul>
