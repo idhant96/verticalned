@@ -1,8 +1,8 @@
 <div class="col-md-3">
 <!--Card-->
-    <div class="author-box z-depth-1" style="height:500px; width:250px;background-color:white;margin-bottom:50px;">
+    <div class="author-box z-depth-1" style="height:auto; width:auto;background-color:white;margin:15%;">
 
-        <div class="pull-right" style="margin:10px" ><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-edit" aria-hidden="true">&nbsp Edit events</i></button>
+        <div class="pull-right" style="margin:10px" ><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-edit" aria-hidden="true">Edit events</i></button>
 		
 		
 				
@@ -97,7 +97,8 @@
 						<div class="latest-blog-posts" style="background-color:white;padding:15px;">
 
 				<h3><i class="fa fa-rss" style="margin-right:15px;"></i>News feed</h3>
- 
+ <!---------------------------------load only top 6 news------------------------------------------------------------------------>
+				
 				<ul style="height:auto;padding:1px;" >
 					<li ><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px;"></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Pellentesque quis eros dignis. </a></li>
@@ -105,8 +106,7 @@
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Nam tempus turpis viverra, mattis diam ac, malesuada mi. </a></li>
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
 					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
-					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
-					<li><i class="fa fa-newspaper-o" aria-hidden="true" style="margin:5px"></></i><a href="#" style="font-size:10px;">Lorem ipsum dolor sit amet. </a></li>
+
 				</ul>
 
 			</div>

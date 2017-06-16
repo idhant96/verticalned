@@ -1,26 +1,37 @@
+<!--Section: Blog v.1-->
+<div class="col-md-6">
+<section class="section extra-margins">
 
-<div class="col-md-6 col-sm-12 col-xs-12">
-    <?php foreach ($result as $card) { ?>
-<!--Author box-->
-<div class="author-box z-depth-1" style="margin-bottom:10px;margin-left:15px; width:700px;" >
-    <!--Name-->
-   <h3 class="h3-responsive text-left z-depth-1" style=" width:100%;margin-bottom:0px; height:50px; color:white; padding-top:15px; padding-left:5px; font-size:15px; background-color:indigo;"><?php echo $card->subject; ?><span class="pull-right" style="padding-right:6px; margin-bottom:0px; font-size:12px;"><?php echo $card->time; ?></span></h3>
+    <!--Section heading-->
+    <center><h1 class="section-heading">Announcements</h1></center>
+  
+  <?php foreach ($result as $card) { ?>  
 
-
-    <div class="row">
-        <!--Avatar-->
-        <div class="col-xs-2 col-sm-2">
-            <img src="../material/materialize/img/img.jpg" class="img-fluid rounded-circle z-depth-2" style="margin:8px; padding:10px;">
+   <div class="container"> 
+	  <div class="row">
+		   <div class="col-md-2"><i class="fa fa-spinner fa-5x" aria-hidden="true" Style="color:blue;"></i>
+		   </div>
+		   <div class="col-md-10">
+            <h4 class="amber-text"><?php echo $card->subject; ?></h4>
+			
+            <p><?php echo $card->description; ?></p>
+            
+			<p>by <a><strong><?php echo $card->staff; ?></strong></a>, <?php echo $card->time; ?></p>
+			
+            <a class="btn btn-cyan" href="<?php echo $card-> links; ?>">Know more</a>
         </div>
-        <!--Author Data-->
-        <div class=" col-sm-10 col-xs-10">
+		
+     </div>
 
-            <p class="hidden-md-down" ><?php echo $card->description; ?></p>
+  </div>
 
-			 <p class="pull-left" style="margin-botton:20px;color:red;"><strong> by:</strong > John Doe</p>
-        </div>
-    </div>
-</div>
-
-<?php } ?>
-</div>
+    <hr  Style="margin-left:30%;margin-right:30%; margin-top:5%;"/>
+	
+	<?php } ?>
+	
+   
+	
+	</section>
+	
+	
+	</div>

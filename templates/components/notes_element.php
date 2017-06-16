@@ -1,8 +1,16 @@
 
-<div class="col-md-6">
+<div class="col-md-6" Style="margin-top:4%;">
 
 
-<div class="list-group" Style="margin-bottom:20px; width:90%;margin-left:30px;">
+<div class="list-group" Style="margin-bottom:5%;">
+  <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
+    <Strong>SE1018</Strong>&nbsp  - &nbspWeb programming </a>
+  <a href="#" class="list-group-item justify-content-between">Unit1 - Html and CSS <span class="badge badge-danger badge-pill">x</span></a>
+  <a href="#" class="list-group-item justify-content-between">unit2 - Javascript<span class="badge badge-danger badge-pill">x</span></a>
+  <a href="#" class="list-group-item justify-content-between">Unit3<span class="badge badge-danger badge-pill">x</span></a>
+  <a href="#" class="list-group-item justify-content-between">Unit4<span class="badge badge-danger badge-pill">x</span></a>
+</div>
+<div class="list-group" Style="margin-bottom:5%;">
   <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
     <Strong>SE1018</Strong>&nbsp  - &nbspWeb programming </a>
   <a href="#" class="list-group-item justify-content-between">Unit1 - Html and CSS <span class="badge badge-danger badge-pill">x</span></a>
@@ -11,13 +19,12 @@
   <a href="#" class="list-group-item justify-content-between">Unit4<span class="badge badge-danger badge-pill">x</span></a>
 </div>
 
-
 </div>
 <div class="col-md-3">
 
 
 <!--Form with header-->
-<div class="card" Style="width:300px">
+<div class="card" Style="width:auto; margin:10%;">
     <div class="card-block">
 
         <!--Header-->
@@ -36,39 +43,40 @@
             <input type="text" id="form3" class="form-control">
             <label for="form3">Description(Topic)</label>
         </div>
-			<form class="form-inline" Style="margin:20px">
+			<div class="form-inline" Style="margin:5%">
 
-				<fieldset class="form-group"Style="margin:10px" >
+				<fieldset class="form-group"Style="margin:5%" >
 					<input name="group1" type="radio" id="radio11" checked="checked">
 					<label for="radio11">1st year</label>
 				</fieldset>
 
-				<fieldset class="form-group" Style="margin:10px">
+				<fieldset class="form-group" Style="margin:5%">
 					<input name="group1" type="radio" id="radio21">
 					<label for="radio21">2nd year</label>
 				</fieldset>
 
-				<fieldset class="form-group" Style="margin:10px">
+				<fieldset class="form-group" Style="margin:5%">
 					<input name="group1" type="radio" id="radio31">
 					<label for="radio31">3rd year</label>
 				</fieldset>
-				<fieldset class="form-group" Style="margin:10px">
+				<fieldset class="form-group" Style="margin:5%">
 					<input name="group1" type="radio" id="radio41">
 					<label for="radio31">4th year</label>
 				</fieldset>
-			</form>
+			</div>
 
         <div class="text-center">
-		<form>
-    <div class="file-field" Style="margin:0px">
+	<form action="#">	
+    <div class="file-field">
         <div class="btn btn-primary btn-sm">
-            <span>Choose file</span>
-            <input type="file">
+            <span >Choose file</span>
+            <input type="file" multiple >
         </div>
-           <button class="btn btn-indigo"><span><i class="fa fa-upload"></i></span>&nbsp Upload</button>
+           <button class="btn btn-indigo mb-1"><span><i class="fa fa-upload"></i></span>&nbsp Upload</button>
           </div>
-</form  
-        </div>
+       
+         </form>
+		</div>
 
     </div>
 </div>
