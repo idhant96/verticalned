@@ -39,6 +39,13 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <style>
+
+.mycontent-left {
+ border-right: 1px solid #ccc;
+
+}
+
+
 @media only screen and (max-width: 500px) {
     #da-slider {
         display:block;
@@ -57,6 +64,7 @@
 		
     }
 }
+
 
 @media only screen and (max-width: 600px){
 	.mol{width:600px;}
