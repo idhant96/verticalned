@@ -20,9 +20,9 @@
 		<a>Settings</a><br/><hr style="background-color:blue; margin-left:60px; margin-right:60px; margin-bottom:10px; margin-top:10px">
 		<a>Timetable</a><br/><hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
 		<a  data-toggle="modal" data-target="#basicExample" >Make announcement</a>
-		
-		
-		
+
+
+
 		</center>
 
         <hr>
@@ -49,9 +49,9 @@
             </div>
             <!--Body-->
             <div class="modal-body">
-                
-				
-        <form method="post" action="index.php?page=announcement.php">
+
+
+        <form method="post" action="index.php?page=announcement">
           <div class="container">
 
             <div class="input-field">
@@ -90,15 +90,15 @@
               <label for="description">Description</label>
             </div><br><br>
 				</div>
-		 <button type="submit" class="btn btn-primary">Announce</button>
+		 <button type="submit" name="submit" class="btn btn-primary">Announce</button>
 				</form>
             </div>
             <!--Footer-->
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                
+
             </div>
-			
+
         </div>
         <!--/.Content-->
     </div>
