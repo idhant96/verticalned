@@ -40,10 +40,7 @@
     <![endif]-->
 <style>
 
-.mycontent-left {
- border-right: 1px solid #ccc;
 
-}
 
 
 @media only screen and (max-width: 500px) {
