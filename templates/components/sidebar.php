@@ -2,9 +2,9 @@
 <!--Card-->
     <div class="author-box z-depth-1" style="height:auto; width:auto;background-color:white;margin:15%;">
 
-        <div class="pull-right" style="margin:10px" ><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-edit" aria-hidden="true">Edit events</i></button>
+     <div class="pull-right" style="margin:10px" >   <?php if(!$_SESSION['isstudent']){ ?> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-edit" aria-hidden="true">Edit events</i></button>
 		
-		
+	
 				
 		<!--Modal: Contact form-->
 <div class="modal hide fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -62,10 +62,10 @@
         </div>
         <!--/.Content-->
     </div>
-</div>
+</div><?php } ?>
 <!--Modal: Contact form-->
 
-</div><br/>
+</div><br/> 
 		
 <!--/.Card image-->
 

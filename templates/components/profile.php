@@ -18,25 +18,32 @@
 		<center><a href="index.php?page=announcement">Wall</a><br/><hr style="background-color:blue; margin-left:80px; margin-right:80px; margin-bottom:10px; margin-top:10px;">
 		<a href="index.php?page=notes">Notes</a><br/><hr style="background-color:blue; margin-left:70px; margin-right:70px; margin-bottom:10px; margin-top:10px">
 		<a href="index.php?page=settings">Settings</a><br/><hr style="background-color:blue; margin-left:60px; margin-right:60px; margin-bottom:10px; margin-top:10px">
-		<a href="#">Timetable</a><br/><hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
-		<a href="#" data-toggle="modal" data-target="#basicExample" >Make announcement</a>
+		<a href="#">Timetable</a><br/>
+		 <?php if(!$_SESSION['isstudent']){ ?>
+		 <hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
+		 <a href="#" data-toggle="modal" data-target="#basicExample" >Make announcement</a>
 
 
 
 		</center>
 
         <hr>
-       <?php if($_SESSION['isstudent']){ ?>   <a class="card-meta " Style="color:green"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Student</span></a>
+         <a class="card-meta " Style="color:red"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Faculty</span></a>
 
 	   <?php } ?>
 	   
-	   <?php if(!$_SESSION['isstudent']) { ?> <a class="card-meta " Style="color:red"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Faculty</span></a>
+	   <?php 
+	   
+	   
+	   if($_SESSION['isstudent']) { ?><hr/> <a class="card-meta " Style="color:green"><span> <i class="fa fa-user"></i>&nbspStudent</span></a>
     
 	 <?php } ?>
 	</div>
     <!--/.Card content-->
 
 </div>
+
+
 
 <!-- Button trigger modal -->
 
