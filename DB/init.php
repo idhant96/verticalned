@@ -1,11 +1,11 @@
 <?php
    session_start();
 	require 'connection.php';
-	function login($username,$password,$isstudent){
+	function login($username,$password,$type){
 		global $dbh;
-		
+
 	//use this code after you have configured db for faculty
-	
+
 	/*if($isstudent=="student")
 	{
 		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
@@ -14,9 +14,14 @@
 		{
 			$stmt  = $dbh->prepare("SELECT * FROM faculty WHERE registerno =?");
 		}*/
-		
-		
-		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
+
+if($type == "student")
+		$stmt  = $dbh->prepare("SELECT registerno,password,name,year FROM student WHERE registerno =?");
+
+  else {
+      $stmt  = $dbh->prepare("SELECT registerno,password,name FROM faculty WHERE name =?");
+
+    }
 		$stmt->execute(array($username));
 		$result = $stmt->fetchObject();
 
@@ -24,25 +29,28 @@
 			$row = $result->password;
 
 		if($row == $password){
-
-			$_SESSION['loggedin'] = true;
-			$_SESSION['username'] = $username;
-			$_SESSION['id'] = $result->id;
-			
-			if($isstudent==="student")
-			$_SESSION['isstudent'] = true;
-		    else
-			$_SESSION['isstudent'] = false;
+      $year = null;
+      if(isset(($result->year)))
+        $year = $result->year;
+      sessionSet($result->name,$result->registerno,$year,$type);
 			return true;
 		}
+  }
 		else{
 
 			return false;
 		}
 		$result = free();
-	}
+
 }
 
+function sessionSet($name, $register,$year,$type){
+  $_SESSION['loggedin'] = true;
+  $_SESSION['username'] = $name;
+  $_SESSION['register'] = $register;
+  $_SESSION['year'] = $year;
+  $_SESSION['type'] = $type;
+}
 
 	function logout(){
 		session_destroy();

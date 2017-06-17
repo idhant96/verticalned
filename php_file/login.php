@@ -3,14 +3,15 @@
 if(!empty($_POST) && isset($_POST['submit'])){
           $user = escape($_POST['username']);
           $pass = escape($_POST['password']);
-		  $isstudent= escape($_POST['group1']);;
-        if(login($user, $pass,$isstudent)){
+		    $type = escape($_POST['group1']);;
+
+        if(login($user, $pass,$type)){
           header("location:index.php?page=announcement");
         }
 
     else{
 
-      header('location:index.php?page=login');
+     header('location:index.php?page=login');
 
       }
     }
