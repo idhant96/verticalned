@@ -53,6 +53,8 @@ catch(PDOException $e){
     $stmt  = $dbh->prepare("SELECT * FROM announcements");
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+	
+
 
 require '../templates/components/header.php';
 require '../templates/components/navbar.php';
