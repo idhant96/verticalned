@@ -29,8 +29,6 @@
 
     <!-- Material Design Bootstrap -->
     <link href="../material/materialize/css/mdb.min.css" rel="stylesheet">
-
-	 <link href="../css/bootstrap-responsive.css" rel="stylesheet">
 	
 	<!-- end: CSS -->
 
@@ -42,10 +40,11 @@
 
 
 
+}
 
 @media only screen and (max-width: 500px) {
-    #da-slider {
-        display:block;
+    .da-slide {
+        display:none;
     }
 }
 @media only screen and (min-width: 500px){
@@ -63,18 +62,7 @@
 }
 
 
-@media only screen and (max-width: 600px){
-	.mol{width:600px;}
-}
-@media only screen and (max-width: 500px){
-	.mol{width:500px;}
-}
-@media only screen and (max-width: 700px){
-	.mol{width:700px;}
-}
-@media only screen and (max-width: 800px){
-	.mol{width:800px;}
-}
+
 .navbar, .navbar-inner, .nav{
 	background:#004d80 !important;
 }

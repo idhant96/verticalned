@@ -24,12 +24,12 @@ switch ($subAction) {
  }
     break;
 	case 'team':
-  if(is_logged_in()){
    require ''.$subAction.'.php';
- }else
- {
-   require('index.php');
- }
+ 
+    break;
+	case 'contactus':
+   require ''.$subAction.'.php';
+ 
     break;
 	case 'settings':
   if(is_logged_in()){

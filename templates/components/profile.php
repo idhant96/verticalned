@@ -15,11 +15,11 @@
         <!--Title-->
         <a><h4 class="card-title title-one"><center><?php echo $_SESSION['username'] ?> </center></h4></a><hr>
 
-		<center><a>Wall</a><br/><hr style="background-color:blue; margin-left:80px; margin-right:80px; margin-bottom:10px; margin-top:10px;">
-		<a>Notes</a><br/><hr style="background-color:blue; margin-left:70px; margin-right:70px; margin-bottom:10px; margin-top:10px">
-		<a>Settings</a><br/><hr style="background-color:blue; margin-left:60px; margin-right:60px; margin-bottom:10px; margin-top:10px">
-		<a>Timetable</a><br/><hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
-		<a  data-toggle="modal" data-target="#basicExample" >Make announcement</a>
+		<center><a href="index.php?page=announcement">Wall</a><br/><hr style="background-color:blue; margin-left:80px; margin-right:80px; margin-bottom:10px; margin-top:10px;">
+		<a href="index.php?page=notes">Notes</a><br/><hr style="background-color:blue; margin-left:70px; margin-right:70px; margin-bottom:10px; margin-top:10px">
+		<a href="index.php?page=settings">Settings</a><br/><hr style="background-color:blue; margin-left:60px; margin-right:60px; margin-bottom:10px; margin-top:10px">
+		<a href="#">Timetable</a><br/><hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
+		<a href="#" data-toggle="modal" data-target="#basicExample" >Make announcement</a>
 
 
 

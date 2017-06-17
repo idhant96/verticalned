@@ -12,10 +12,10 @@
             <ul class="navbar-nav pull-xs-right" >
 
                 <li class="nav-item">
-                    <a class="nav-link">Team</a>
+                    <a href="index.php?page=team"class="nav-link">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a href="index.php?page=contactus" class="nav-link">Contact</a>
                 </li>
                 <?php if(is_logged_in()){ ?>
               <li class="nav-item">

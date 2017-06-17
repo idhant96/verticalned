@@ -45,7 +45,7 @@ function myFunction5() {
 </script>
 
 <br/><br/><br/><div class="container-fluid" Style="background-color:white">
-<center><h1>Account Settings</h1></center><hr/>
+<center><h1 Style="color:green;">Account Settings</h1></center><hr/>
 <div class="row">
   <div class="col-md-3">
    <div class="mycontent-left">

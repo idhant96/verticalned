@@ -1,10 +1,11 @@
 
 <!--Section: Team v.3-->
-<div class="col-md-6">
+<div class="container">
 <section class="section team-section">
 
     <!--Section heading-->
-    <center><h1 class="section-heading">Our amazing team</h1></center>
+    <center><h1 class="section-heading" Style="color:green;margin:0px;">Our amazing team</h1></center>
+	<hr/>
     <!--Section sescription-->
     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
 
@@ -16,21 +17,23 @@
 
             <div class="col-md-6 float-left">
                 <div class="avatar">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg">
+                    <img src="../img/mohit.jpeg">
                 </div>
             </div>
 
             <div class="col-md-6 float-right">
-                <h4>John Doe</h4>
-                <h5>Web Developer</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+                <h4  Style="color:red;margin-left:15px;" >Mohit Tiwari</h4><hr Style="color:brown;margin:10px;"/>
+                <h5 >FullStack Developer</h5>
+                <p>Any fool can write code that a computer can understand. Good programmers write code that anyone can understand.<br/>
+--Martin Fowler</p>
 
                 <!--Facebook-->
-                <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                <a href="https://www.facebook.com/mohit.tiwari.5036459?ref=br_rs" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
                 <!--Twitter-->
-                <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                <a href="https://twitter.com/mohitt533" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
                 <!--GitHub-->
-                <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+                <a href="https://github.com/mohitt533" class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+				 <a href="https://www.linkedin.com/in/mohit-tiwari-b88185140/" class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
             </div>
 
         </div>
@@ -68,5 +71,4 @@
 
 
 </section>
-<!--/Section: Team v.3-->
 </div>

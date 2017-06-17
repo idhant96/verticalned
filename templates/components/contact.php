@@ -3,7 +3,8 @@
 <section class="section mb-4">
 
     <!--Section heading-->
-    <h1 class="section-heading" Style="margin-top:0px;">Contact</h1>
+    <center><h1 class="section-heading" Style="margin:0px;color:green;">Contact</h1><center>
+	<hr/>
     <!--Section sescription-->
     <p class="section-description mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
 
@@ -26,31 +27,31 @@
 
                     <!--Body-->
                     <div class="md-form">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="form3" class="form-control">
+                        <i class="fa fa-user prefix" Style="color:grey;"></i>
+                        <input type="text" id="form3" class="form-control" />
                         <label for="form3">Your name</label>
                     </div>
 
                     <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
-                        <input type="text" id="form2" class="form-control">
+                        <i class="fa fa-envelope prefix" Style="color:grey;" ></i>
+                        <input type="text" id="form2" class="form-control" />
                         <label for="form2">Your email</label>
                     </div>
 
                     <div class="md-form">
-                        <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form32" class="form-control">
+                        <i class="fa fa-tag prefix" Style="color:grey;"></i>
+                        <input type="text" id="form32" class="form-control" />
                         <label for="form32">Subject</label>
                     </div>
 
                     <div class="md-form">
-                        <i class="fa fa-pencil prefix"></i>
+                        <i class="fa fa-pencil prefix" Style="color:green;"> </i>
                         <textarea type="text" id="form8" class="md-textarea"></textarea>
                         <label for="form8">Icon Prefix</label>
                     </div>
 
                     <div class="text-center">
-                        <button class="btn btn-ins">Submit</button>
+                        <button class="btn btn-ins yellow">Submit</button>
                     </div>
 
                 </div>
@@ -96,3 +97,31 @@
 
 </section>
 <!--/Section: Contact v.1--></div>
+
+<script>
+
+function init_map() {
+    
+    var var_location = new google.maps.LatLng(40.725118, -73.997699);
+
+    var var_mapoptions = {
+        center: var_location,
+    
+        zoom: 14
+    };
+
+    var var_marker = new google.maps.Marker({
+        position: var_location,
+        map: var_map,
+        title: "New York"
+    });
+
+    var var_map = new google.maps.Map(document.getElementById("map-container"),
+        var_mapoptions);
+
+    var_marker.setMap(var_map);
+
+}
+
+google.maps.event.addDomListener(window, 'load', init_map);
+</script>

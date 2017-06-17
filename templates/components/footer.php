@@ -8,8 +8,8 @@
 
             <!--First column-->
             <div class="col-md-3 offset-md-1">
-                <h5 class="title">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
+                <h5 class="title" Style="color:red">Notice</h5>
+                <p Style="color:yellow">We are still in development phase so some features are not functional right now.Sorry for thw inconvinence caused.</p>
             </div>
             <!--/.First column-->
 
@@ -17,10 +17,10 @@
 
             <!--Second column-->
             <div class="col-md-2 offset-md-1">
-                <h5 class="title">Links</h5>
+                <h5 class="title">Department</h5>
                 <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
+                    <li><a href="#!">Visit</a></li>
+                    <li><a href="#!">Code enigma</a></li>
                     
                 </ul>
             </div>
@@ -30,10 +30,10 @@
 
             <!--Third column-->
             <div class="col-md-2">
-                <h5 class="title">Links</h5>
+                <h5 class="title">Team</h5>
                 <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
+                    <li><a href="#!">Projects</a></li>
+                    <li><a href="#!">Facebook page</a></li>
                    
                 </ul>
             </div>
@@ -41,16 +41,7 @@
 
             <hr class="hidden-md-up">
 
-            <!--Fourth column-->
-            <div class="col-md-2">
-                <h5 class="title">Links</h5>
-                <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                
-                </ul>
-            </div>
-            <!--/.Fourth column-->
+          
 
         </div>
     </div>
@@ -62,8 +53,8 @@
     <div class="call-to-action">
         <ul>
             <li>
-                <h5>Register for free</h5></li>
-            <li><a href="" class="btn btn-danger">Sign up!</a></li>
+                <h5>Need help?</h5></li>
+            <li><a href="" class="btn btn-danger">Contact us</a></li>
         </ul>
     </div>
     <!--/.Call to action-->
@@ -96,7 +87,8 @@
 </footer>
 <!--/.Footer-->
 
-
+	<!--Google Maps-->
+<script src="https://maps.google.com/maps/api/js"></script>
   <!-- JQuery -->
 	   
     <script type="text/javascript" src="../material/materialize/js/jquery-2.2.3.min.js"></script>
