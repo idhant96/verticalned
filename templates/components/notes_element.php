@@ -26,9 +26,9 @@
 <!--Form with header-->
 <div class="card" Style="width:auto; margin:10%;">
     <div class="card-block">
-	
-	
-	<form action="upload.php" method="post">
+
+
+	<form action="upload.php" method="post" enctype="multipart/form-data" >
         <!--Header-->
         <div class="form-header blue-gradient">
             <h3><i class="fa fa-upload"></i> Upload Notes</h3>
@@ -37,12 +37,12 @@
         <!--Body-->
         <div class="md-form">
             <i class="fa fa-book prefix"></i>
-            <input type="text" id="form3" name="subject" class="form-control">
+            <input type="text" id="form3" id='fileToUpload' name="subject" class="form-control">
             <label for="form3">Subject code</label>
         </div>
          <div class="md-form">
-            <i class="fa fa-file-text prefix"></i> 
-            <input type="text" id="form3" name="description" class="form-control">
+            <i class="fa fa-file-text prefix"></i>
+            <input type="text" id="form3" id="description" class="form-control">
             <label for="form3">Description(Topic)</label>
         </div>
 			<div class="form-inline" Style="margin:5%">
@@ -67,7 +67,7 @@
 				</fieldset>
 			</div>
 
-       <div class="text-center"> 	
+       <div class="text-center">
       <div class="file-field">
         <div class="btn btn-primary btn-sm">
             <span >Choose file</span>
@@ -77,14 +77,14 @@
           </div>
        </div>
          </form>
-		
+
 
     </div>
 </div>
 
 
 
- 
-            
+
+
 </div>
 </div></div>
