@@ -4,7 +4,7 @@
 <nav class="navbar navbar-toggleable-md navbar-dark" style="height:70px; width:100%; margin-top:0px;">
     <div class="container">
         
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php?page=announcement">
             <strong>VerticalNed</strong>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1" Style="margin-left:70%;">

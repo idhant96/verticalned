@@ -3,6 +3,19 @@
 	require 'connection.php';
 	function login($username,$password,$isstudent){
 		global $dbh;
+		
+	//use this code after you have configured db for faculty
+	
+	/*if($isstudent=="student")
+	{
+		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
+		)
+		else
+		{
+			$stmt  = $dbh->prepare("SELECT * FROM faculty WHERE registerno =?");
+		}*/
+		
+		
 		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
 		$stmt->execute(array($username));
 		$result = $stmt->fetchObject();
@@ -15,7 +28,11 @@
 			$_SESSION['loggedin'] = true;
 			$_SESSION['username'] = $username;
 			$_SESSION['id'] = $result->id;
-			$_SESSION['isstudent'] = $isstudent;
+			
+			if($isstudent==="student")
+			$_SESSION['isstudent'] = true;
+		    else
+			$_SESSION['isstudent'] = false;
 			return true;
 		}
 		else{

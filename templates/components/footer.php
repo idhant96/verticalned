@@ -19,8 +19,8 @@
             <div class="col-md-2 offset-md-1">
                 <h5 class="title">Department</h5>
                 <ul>
-                    <li><a href="#!">Visit</a></li>
-                    <li><a href="#!">Code enigma</a></li>
+                    <li><a href="https://www.sweassociation.in/">Visit</a></li>
+                    <li><a href="https://www.sweassociation.in/CodeEnigma/">Code enigma</a></li>
                     
                 </ul>
             </div>

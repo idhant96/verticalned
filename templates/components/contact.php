@@ -6,7 +6,7 @@
     <center><h1 class="section-heading" Style="margin:0px;color:green;">Contact</h1><center>
 	<hr/>
     <!--Section sescription-->
-    <p class="section-description mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+    <p class="section-description mb-5">We try to look into every issue brought in our notice and solve it with our full capacity. We aim at providing 100% user satisfaction with our constant endeavours.</p>
 
     <div class="row">
 
