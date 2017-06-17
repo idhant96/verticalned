@@ -24,7 +24,7 @@ switch ($subAction) {
    require ''.$subAction.'.php';
  }else
  {
-   require('index.php');
+   require('login.php');
  }
     break;
 	
@@ -50,7 +50,7 @@ switch ($subAction) {
       }
    else
 	 {
-	   require('index.php');
+	   require('login.php');
 	 }
 		break;
   
