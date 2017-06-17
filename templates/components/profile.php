@@ -26,8 +26,14 @@
 		</center>
 
         <hr>
-        <a class="card-meta " Style="color:red"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Faculty</span></a>
-    </div>
+       <?php if($_SESSION['isstudent']){ ?>   <a class="card-meta " Style="color:green"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Student</span></a>
+
+	   <?php } ?>
+	   
+	   <?php if(!$_SESSION['isstudent']) { ?> <a class="card-meta " Style="color:red"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-user"></i> &nbsp Faculty</span></a>
+    
+	 <?php } ?>
+	</div>
     <!--/.Card content-->
 
 </div>

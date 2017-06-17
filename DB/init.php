@@ -1,7 +1,7 @@
 <?php
    session_start();
 	require 'connection.php';
-	function login($username,$password){
+	function login($username,$password,$isstudent){
 		global $dbh;
 		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
 		$stmt->execute(array($username));
@@ -15,7 +15,7 @@
 			$_SESSION['loggedin'] = true;
 			$_SESSION['username'] = $username;
 			$_SESSION['id'] = $result->id;
-
+			$_SESSION['isstudent'] = $isstudent;
 			return true;
 		}
 		else{

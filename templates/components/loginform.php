@@ -73,12 +73,12 @@
 			<div class="form-inline " Style="padding-left:15%;">
 
 				<fieldset class="form-group">
-					<input name="group1" type="radio" id="radio11" checked="checked">
+					<input name="group1" type="radio" id="radio11" checked="checked" value=false>
 					<label for="radio11">Faculty</label>
 				</fieldset>
 
 				<fieldset class="form-group">
-					<input name="group1" type="radio" id="radio21">
+					<input name="group1" type="radio" id="radio21" value=true >
 					<label for="radio21">Student</label>
 				</fieldset>
 

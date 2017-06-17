@@ -3,7 +3,8 @@
 if(!empty($_POST) && isset($_POST['submit'])){
           $user = escape($_POST['username']);
           $pass = escape($_POST['password']);
-        if(login($user, $pass)){
+		  $isstudent= escape($_POST['group1']);;
+        if(login($user, $pass,$isstudent)){
           header("location:index.php?page=announcement");
         }
 

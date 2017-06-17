@@ -12,10 +12,14 @@ header('/php_file/index?page=mobile');
 $subAction = isset($_GET['page']) ? $_GET['page'] : 'index';
 
 switch ($subAction) {
+  
+  
   case 'login':
     require('login.php');
   break;
-  case 'announcement':
+ 
+
+ case 'announcement':
   if(is_logged_in()){
    require ''.$subAction.'.php';
  }else
@@ -23,35 +27,41 @@ switch ($subAction) {
    require('index.php');
  }
     break;
+	
+	
 	case 'team':
    require ''.$subAction.'.php';
  
     break;
+	
+	
 	case 'contactus':
    require ''.$subAction.'.php';
  
     break;
+	
+	
 	case 'settings':
-  if(is_logged_in()){
+  
+  if(is_logged_in())
+    {
+   
    require ''.$subAction.'.php';
- }else
- {
-   require('index.php');
- }
-    break;
-  case 'student':
-     if(is_logged_in())
-    {
-      require ''.$subAction.'.php';
-    }
-    else{
-      require 'login.php';
-    }
-    break;
+      }
+   else
+	 {
+	   require('index.php');
+	 }
+		break;
+  
+	
   case 'notes':
+  
     if(is_logged_in())
-    {
-      require ''.$subAction.'.php';
+    {if($_SESSION['isstudent'])
+       require 'student.php';
+     else
+		 require 'notes.php';
     }
     else
     {
@@ -61,6 +71,8 @@ switch ($subAction) {
     case 'logout':
       require 'logout.php';
       break;
+  
+  
   default:
      require 'login.php';
     break;
