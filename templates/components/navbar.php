@@ -7,10 +7,14 @@
         <a class="navbar-brand" href="#">
             <strong>VerticalNed</strong>
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav1" Style="margin-left:82%;">
+        <div class="collapse navbar-collapse" id="navbarNav1" Style="margin-left:70%;">
 
             <ul class="navbar-nav pull-xs-right" >
-
+				 <?php if(is_logged_in()){ ?>
+				 <li class="nav-item">
+                    <a href="index.php?page=announcement"class="nav-link">Announcement</a>
+                </li>
+				 <?php } ?>
                 <li class="nav-item">
                     <a href="index.php?page=team"class="nav-link">Team</a>
                 </li>

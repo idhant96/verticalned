@@ -54,7 +54,7 @@
         <ul>
             <li>
                 <h5>Need help?</h5></li>
-            <li><a href="" class="btn btn-danger">Contact us</a></li>
+            <li><a href="index.php?page=contactus" class="btn btn-danger">Contact us</a></li>
         </ul>
     </div>
     <!--/.Call to action-->

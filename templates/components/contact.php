@@ -73,19 +73,19 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <a class="btn-floating btn-large "><i class="fa fa-map-marker"  Style="padding-top:15px;width:50px; height:50px;color:white; background-color:red; border-radius:50%;"></i></a>
-                    <p>New York, NY 10012</p>
-                    <p>United States</p>
+                    <p>SRM University,</p>
+                    <p>Chennai-603203 ,India</p>
                 </div>
 
                 <div class="col-md-4">
                     <a class="btn-floating btn-small "><i class="fa fa-phone" Style="padding-top:16px;width:50px; height:50px; color:white;background-color:blue; border-radius:50%;"></i></a>
-                    <p>+ 01 234 567 89</p>
+                    <p>+ 91 9092364728</p>
                     <p>Mon - Fri, 8:00-22:00</p>
                 </div>
 
                 <div class="col-md-4">
                     <a class="btn-floating btn-small "><i class="fa fa-envelope" Style="padding-top:16px;width:50px; height:50px; color:white;background-color:brown; border-radius:50%;"></i></a>
-                    <p>info@gmail.com</p>
+                    <p>info@mail.com</p>
                     <p>sale@gmail.com</p>
                 </div>
             </div>
