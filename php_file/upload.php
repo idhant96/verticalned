@@ -1,4 +1,45 @@
 <?php
+
+//updating database 
+require_once '../DB/init.php';
+if (is_logged_in()){
+
+if(!empty($_POST) && isset($_POST['submit'])){
+
+	$subcode = escape($_POST['subject']);
+	$description = escape($_POST['description']);
+	$year = escape($_POST['group1']);
+	 $staff = $_SESSION['username'];
+	
+	try{
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = $dbh->prepare("INSERT INTO notes (subcode,description,year,staff)
+			VALUES (?,?,?,?)");
+$sql->bindParam(1,$subcode);
+$sql->bindParam(2,$description);
+$sql->bindParam(3,$year);
+		$sql->bindParam(4,$staff);
+		
+$sql->execute();
+}
+catch(PDOException $e){
+	echo $e->getMessage();
+}
+}
+    $stmt  = $dbh->prepare("SELECT * FROM notes");
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+
+
+
+
+
+
+$dirc="Files/".
+if (!file_exists('path/to/directory')) {
+    mkdir('path/to/directory', 0777, true);
+}
 $target_dir = "Files/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -42,6 +83,6 @@ if ($uploadOk == 0) {
     }
 }
 
-
+}
 header('Location: index.php?page=notes');
 ?>

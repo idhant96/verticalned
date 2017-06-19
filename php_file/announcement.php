@@ -45,6 +45,7 @@ $sql->bindParam(3,$first);
 			$sql->bindParam(8,$_SESSION['username']);
 			$sql->bindParam(9,$subject);
 $sql->execute();
+echo "success" ;
 }
 catch(PDOException $e){
 	echo $e->getMessage();

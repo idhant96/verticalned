@@ -19,7 +19,7 @@
 		<a href="index.php?page=notes">Notes</a><br/><hr style="background-color:blue; margin-left:70px; margin-right:70px; margin-bottom:10px; margin-top:10px">
 		<a href="index.php?page=settings">Settings</a><br/><hr style="background-color:blue; margin-left:60px; margin-right:60px; margin-bottom:10px; margin-top:10px">
 		<a href="#">Timetable</a><br/>
-		 <?php if(!$_SESSION['isstudent']){ ?>
+		 <?php if($_SESSION['type']==="faculty"){ ?>
 		 <hr style="background-color:blue; margin-left:50px; margin-right:50px; margin-bottom:10px; margin-top:10px">
 		 <a href="#" data-toggle="modal" data-target="#basicExample" >Make announcement</a>
 
@@ -35,7 +35,7 @@
 	   <?php 
 	   
 	   
-	   if($_SESSION['isstudent']) { ?><hr/> <a class="card-meta " Style="color:green"><span> <i class="fa fa-user"></i>&nbspStudent</span></a>
+	   if($_SESSION['type']==="student") { ?><hr/> <a class="card-meta " Style="color:green"><span> <i class="fa fa-user"></i>&nbspStudent</span></a>
     
 	 <?php } ?>
 	</div>

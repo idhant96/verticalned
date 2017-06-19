@@ -5,7 +5,7 @@ $conn_name = 'localhost';
 //Give the username :
 $user_db = 'root';
 //Give the password :
-$pass_db = '';
+$pass_db = 'dbpass';
 // Give the database name :
 $db_name = 'verticalned';
 

@@ -4,22 +4,12 @@
 	function login($username,$password,$type){
 		global $dbh;
 
-	//use this code after you have configured db for faculty
-
-	/*if($isstudent=="student")
-	{
-		$stmt  = $dbh->prepare("SELECT * FROM student WHERE registerno =?");
-		)
-		else
-		{
-			$stmt  = $dbh->prepare("SELECT * FROM faculty WHERE registerno =?");
-		}*/
 
 if($type == "student")
 		$stmt  = $dbh->prepare("SELECT registerno,password,name,year FROM student WHERE registerno =?");
 
   else {
-      $stmt  = $dbh->prepare("SELECT registerno,password,name FROM faculty WHERE name =?");
+      $stmt  = $dbh->prepare("SELECT registerno,password,name FROM faculty WHERE registerno =?");
 
     }
 		$stmt->execute(array($username));
@@ -30,7 +20,7 @@ if($type == "student")
 
 		if($row == $password){
       $year = null;
-      if(isset(($result->year)))
+      if(!empty(($result->year)))
         $year = $result->year;
       sessionSet($result->name,$result->registerno,$year,$type);
 			return true;
