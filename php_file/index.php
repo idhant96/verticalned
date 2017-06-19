@@ -58,7 +58,7 @@ switch ($subAction) {
   case 'notes':
   
     if(is_logged_in())
-    {if($_SESSION['isstudent'])
+    {if($_SESSION['type']==="student")
        require 'student.php';
      else
 		 require 'notes.php';
