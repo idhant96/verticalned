@@ -99,36 +99,32 @@ if ($uploadOk == 0) {
 
 //result set 
 
-$stmt  = $dbh->prepare("SELECT DISTINCT subcode FROM notes");
+$stmt  = $dbh->prepare("SELECT* FROM notes");
     $stmt->execute();
-    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
-    var_dump($result) ;
+ $result = $stmt->fetchAll(PDO::FETCH_OBJ);
 }
-?>
+
+ ?>
 
 
 
 <div class="col-md-6" Style="margin-top:4%;">
 
-  <?php foreach ($result as $deck) { 
-echo $result ;  
    
-   $stmt  = $dbh->prepare("SELECT * FROM notes WHERE subcode =".$deck);
-    $stmt->execute();
-    $res = $stmt->fetchAll(PDO::FETCH_OBJ); ?>
-  
+   
+   
 <div class="list-group" Style="margin-bottom:5%;">
   <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
-    <Strong><?php echo $deck -> subcode ; ?></Strong>&nbsp  - &nbsp <?php echo $deck -> description ; ?> </a>
+    <Strong>SE1018</Strong>&nbsp  - &nbsp WEB PROGRAMMING </a>
 	
-	<?php foreach ($res as $card) {  ?>
-  <a href="#" class="list-group-item justify-content-between"><?php echo $card -> filename ; ?> <a class="badge badge-danger badge-pill">x</a></a>
-	<?php } ?>
-
-  <?php }?>
-
-
+	
+  <a href="#" class="list-group-item justify-content-between">AJAX.ppt  <span class="badge badge-danger badge-pill">x</span></a>
+	
 </div>
+  
+
+
+
 </div>
 
 <div class="col-md-3">
@@ -192,10 +188,6 @@ echo $result ;
 
     </div>
 </div>
-
-
-
-
-
-</div> </div> </div>
-
+</div>
+</div>
+</div>
