@@ -15,16 +15,28 @@ if(!empty($_POST) && isset($_POST['submit'])){
 	
 	try{
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql = $dbh->prepare("INSERT INTO notes (subcode,description,year,staff,filename,filepath)
-			VALUES (?,?,?,?,?,?)") ;
+	
+//saving notes details
+
+	$sql = $dbh->prepare("INSERT INTO notes (subcode,year,staff)
+			VALUES (?,?,?)") ;
+			
+			
+$sql->bindParam(1,$subcode);
+$sql->bindParam(2,$year);
+$sql->bindParam(3,$staff);
+
+$sql->execute();
+
+//saving file details
+
+$sql = $dbh->prepare("INSERT INTO notedb (subcode,description,filename,filepath)
+			VALUES (?,?,?,?)") ;
+			
 $sql->bindParam(1,$subcode);
 $sql->bindParam(2,$description);
-$sql->bindParam(3,$year);
-$sql->bindParam(4,$staff);
-$sql->bindParam(5,$filename);
-$sql->bindParam(6,$filepath);
-
-		
+$sql->bindParam(3,$filename);
+$sql->bindParam(4,$filepath);		
 		
 $sql->execute();
 }
@@ -99,30 +111,37 @@ if ($uploadOk == 0) {
 
 //result set 
 
-$stmt  = $dbh->prepare("SELECT* FROM notes");
+$stmt  = $dbh->prepare("SELECT  subcode FROM notes");
     $stmt->execute();
- $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+ $result = $stmt->fetchALL(PDO::FETCH_OBJ);
+
 }
 
  ?>
 
+ <div class="col-md-6" Style="margin-top:4%;">
+ <?php 
+		foreach( $result as $card)
+		{
+			?>
+			
+		<div class="list-group" Style="margin-bottom:5%;">
+		  <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
+				<Strong><?php echo $card->subcode; ?> </Strong>&nbsp  - &nbsp <?php echo $card ->subcode; ?> </a>
+				
+	<?php			
+			$stmt  = $dbh->prepare("SELECT * FROM notedb where subcode =".$card->subcode);
+             $stmt->execute();
+              $res = $stmt->fetchALL(PDO::FETCH_OBJ);
+			  
 
-
-<div class="col-md-6" Style="margin-top:4%;">
-
-   
-   
-   
-<div class="list-group" Style="margin-bottom:5%;">
-  <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
-    <Strong>SE1018</Strong>&nbsp  - &nbsp WEB PROGRAMMING </a>
-	
-	
-  <a href="#" class="list-group-item justify-content-between">AJAX.ppt  <span class="badge badge-danger badge-pill">x</span></a>
-	
+	foreach( $res as $deck)
+		{  ?>
+          <a href="#" class="list-group-item justify-content-between"><?php echo $deck->filename; ?>  <span class="badge badge-danger badge-pill">x</span></a>
+		<?php } ?>
 </div>
   
-
+		<?php } ?>
 
 
 </div>
