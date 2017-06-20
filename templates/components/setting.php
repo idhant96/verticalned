@@ -62,8 +62,14 @@ function myFunction5() {
 	
 	<div id="myDIV1" style="display: block;">
   
- 
-
+ <center><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg" alt="Card image cap" Style="border-radius:50%;height:25%;width:25%;margin-top:5px;"></center>
+<center><div class="file-field">
+       
+          
+            <input type="file" class="btn btn-primary btn-sm" name="fileToUpload"  id="fileToUpload" multiple >
+     
+           <button class="btn btn-indigo mb-1" type="submit" name="submit"  ><span><i class="fa fa-upload"></i></span>&nbsp Upload</button>
+          </div></center>
 </div>
 
             
