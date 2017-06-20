@@ -1,6 +1,15 @@
 # verticalned.in
 # .htaccess
+Options FollowSymLinks
 
-Options -Indexes
+# Turn on rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect all requests to index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+Rewrite . index.php
+
+Options +Indexes
 IndexOptions FancyIndexing
-loginubuntu1996
