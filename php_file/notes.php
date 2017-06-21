@@ -12,43 +12,14 @@ if (is_logged_in()){
 
 if(!empty($_POST) && isset($_POST['submit'])){
 
-	$subcode = escape($_POST['subject']);
-	$description = escape($_POST['description']);
-	$year = escape($_POST['group1']);
-	$filename = $_FILES['fileToUpload']['name'];
-	$filepath = $subcode."/".$_FILES['fileToUpload']['name'];
-	 $staff = $_SESSION['username'];
+	$subcode = strtoupper( escape($_POST['subject']));
+	$description = strtoupper(escape($_POST['description']));
+	$year = strtoupper(escape($_POST['group1']));
+	$filename = strtoupper($_FILES['fileToUpload']['name']);
+	$filepath = strtoupper($subcode."/".$_FILES['fileToUpload']['name']);
+	 $staff = strtoupper($_SESSION['username']);
 	
-	try{
-	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
-//saving notes details
-
-	$sql = $dbh->prepare("INSERT INTO notes (subcode,year,staff)
-			VALUES (?,?,?)") ;
-			
-			
-$sql->bindParam(1,$subcode);
-$sql->bindParam(2,$year);
-$sql->bindParam(3,$staff);
-
-$sql->execute();
-
-//saving file details
-
-$sql = $dbh->prepare("INSERT INTO notedb (subcode,description,filename,filepath)
-			VALUES (?,?,?,?)") ;
-			
-$sql->bindParam(1,$subcode);
-$sql->bindParam(2,$description);
-$sql->bindParam(3,$filename);
-$sql->bindParam(4,$filepath);		
-		
-$sql->execute();
-}
-catch(PDOException $e){
-	echo $e->getMessage();
-}
 
     
 
@@ -83,7 +54,7 @@ if (file_exists($target_file)) {
 }
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 2000000000) {
-    echo "Sorry, your file is too large.";
+    alert("Sorry, your file is too large.");
     $uploadOk = 0;
 }
 // // Allow certain file formats
@@ -94,11 +65,42 @@ if ($_FILES["fileToUpload"]["size"] > 2000000000) {
 // }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
+    alert("Sorry, your file was not uploaded.");
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         $message = "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		
+		try{
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+//saving notes details
+
+	$sql = $dbh->prepare("INSERT INTO notes (subcode,year,staff,description)
+			VALUES (?,?,?,?)") ;
+			
+			
+$sql->bindParam(1,$subcode);
+$sql->bindParam(2,$year);
+$sql->bindParam(3,$staff);
+$sql->bindParam(4,$description);
+
+$sql->execute();
+
+//saving file details
+
+$sql = $dbh->prepare("INSERT INTO notedb (subcode,filename,filepath)
+			VALUES (?,?,?)") ;
+			
+$sql->bindParam(1,$subcode);
+$sql->bindParam(2,$filename);
+$sql->bindParam(3,$filepath);		
+		
+$sql->execute();
+}
+catch(PDOException $e){
+	echo $e->getMessage();
+}
 		
 			echo "<SCRIPT>
 			alert('$message');
@@ -117,7 +119,7 @@ if ($uploadOk == 0) {
 
 //result set 
 
-$stmt  = $dbh->prepare("SELECT  subcode FROM notes");
+$stmt  = $dbh->prepare("SELECT  DISTINCT subcode FROM notes");
     $stmt->execute();
  $result = $stmt->fetchALL(PDO::FETCH_OBJ);
 
@@ -129,7 +131,8 @@ require '../templates/components/navbar.php';
 require '../templates/components/profile.php';
 require '../templates/components/notes_element.php';
 require '../templates/components/footer.php';
-}else
+}
+else
 	header('Location: index.php');
 
 ?>

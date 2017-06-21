@@ -2,24 +2,26 @@
 
  <div class="col-md-6" Style="margin-top:4%;">
  <?php 
+
 		foreach( $result as $card)
 		{
 			?>
 			
 		<div class="list-group" Style="margin-bottom:5%;">
 		  <a href="#" class="list-group-item disabled" Style="background-color:#262626;color:white;">
-				<Strong><?php echo $card->subcode; ?> </Strong>&nbsp  - &nbsp <?php echo $card ->subcode; ?> </a>
+				<Strong><?php echo $card->subcode; ?> </Strong>&nbsp  - &nbsp ---</a>
 				
-	<?php			
-			$stmt  = $dbh->prepare("SELECT * FROM notedb where subcode =".$card->subcode);
+	<?php		
+			
+			$stmt  = $dbh->prepare("SELECT * FROM notedb");
              $stmt->execute();
               $res = $stmt->fetchALL(PDO::FETCH_OBJ);
 			  
 
 	foreach( $res as $deck)
-		{  ?>
+		{  if(($card->subcode)===($deck->subcode)){?>
           <a href="#" class="list-group-item justify-content-between"><?php echo $deck->filename; ?>  <span class="badge badge-danger badge-pill">x</span></a>
-		<?php } ?>
+		<?php } }?>
 </div>
   
 		<?php } ?>
