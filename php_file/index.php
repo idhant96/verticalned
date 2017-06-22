@@ -17,6 +17,9 @@ switch ($subAction) {
   case 'login':
     require('login.php');
   break;
+  case 'mobile':
+    require('mobile.php');
+  break;
  
 
  case 'announcement':
