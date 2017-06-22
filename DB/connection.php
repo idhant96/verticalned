@@ -1,11 +1,11 @@
 <?php
 //Give the connection name :
-$conn_name = 'localhost';
+$conn_name = 'verticalned';
 
 //Give the username :
 $user_db = 'root';
 //Give the password :
-$pass_db = 'dbpass';
+$pass_db = '';
 // Give the database name :
 $db_name = 'verticalned';
 
